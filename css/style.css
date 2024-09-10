@@ -1,0 +1,306 @@
+
+
+html, body {
+    margin: 0;
+    background-color: #eee3dca0;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #354F52;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0em 0.4em 0.5em rgba(0, 0, 0, 0.189);
+    p {
+        font-family: "Cantarell";
+    }
+
+    a:link, a:visited {
+        color: #EEE3DC; 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #eee3dcb7;
+        text-decoration: none;
+    }
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url(fonts/Cantarell/Cantarell-Regular.ttf);
+}
+
+footer {
+    background-color: #354F52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    
+    p {
+        font-family: "Cantarell";
+        font-size: 1.1em;
+        color: #C8553D;
+        margin-right: 1em;
+    }
+
+    a:link, a:visited {
+        color: #EEE3DC; 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #eee3dcb7;
+        text-decoration: none;
+    }
+}
+
+/*splash page */
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 10rem;
+    width: 100vw; 
+    height: 100vh; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box; 
+
+    img {
+        border-radius: 50%;
+        transition: transform 0.5s;
+    }
+
+    a:link, a:visited {
+        color: black; 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #C8553D;
+        text-decoration: none;
+    }
+}
+
+.splash img:hover {
+    transform: scale(1.02);
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.189);
+}
+
+@font-face {
+    font-family: "Red Hat Display Reg";
+    src: url(fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Red Hat Display Bold";
+    src: url(fonts/Red_Hat_Display/static/RedHatDisplay-Bold.ttf);
+}
+
+h1 {
+    font-family: "Red Hat Display Reg";
+    color: #354F52; 
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: "Red Hat Display Reg";
+    color: #C8553D; 
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: "Red Hat Display Reg";
+    font-size: 2rem;
+    text-align: center;
+}
+
+p, li, dl {
+    font-family: "Cantarell";
+}
+
+#address {
+    font-size: 1rem;
+}
+
+#tagline {
+    font-size: 1.25rem;
+}
+
+#border {
+    border-color:#C8553D;
+    width: 70%;
+}
+
+/* sections */
+
+section {
+    padding: 1rem 4rem;
+}
+
+.education, .honors, .skills, .leadership {
+    background-color:#354F52;
+    padding: 1rem 2.5rem;
+    border-radius: 40px 4px;
+    color:#EEE3DC;
+}
+
+.honors, .leadership {
+    /* Add hr line between award and date and algn respective on each side  */
+    dl {
+        display: grid;
+        grid-template-columns: auto 2fr auto;
+        gap: 1rem;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    dt {
+        text-align: left;
+    }
+
+    dd {
+        text-align: right;
+    }
+
+    hr {
+        border-color:#C8553D;
+        flex-grow: 1;
+        height: 1.4px;
+        background-color: #C8553D;
+        margin: 0.8rem -2rem 0rem 0.8rem;
+        border: none;
+        max-width: auto;
+    }
+}
+
+.leadership {
+    a:link, a:visited {
+        color: #EEE3DC; 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #eee3dcb7;
+        text-decoration: none;
+    }
+}
+
+/* Projects */
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background-color:#354F52;
+    border-radius: 3rem 3rem 0rem 0rem;
+    color: #EEE3DC;
+    padding: 2rem 1rem;
+    margin-left: 2rem;
+    box-shadow: 0em 0.8em 0.8em rgba(0, 0, 0, 0.189);
+    transition: transform 0.3s;
+
+    a:link, a:visited {
+        color: #EEE3DC; 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #eee3dcb7;
+        text-decoration: none;
+    }
+
+    img {
+        width: 25rem;
+    }
+}
+
+.three-col .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.189);
+}
+
+/* Contact page styling */
+
+
+.contact_head {
+    text-align: center;
+    padding: 3rem 10rem;
+
+    a:link, a:visited {
+        color: black; 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #C8553D;
+        text-decoration: none;
+    }
+    
+}
+
+.one-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+label {
+    font-family: "Red Hat Display Reg";
+    color: #354F52; 
+    font-size: 2.5rem;
+}
+
+
+#name, #email {
+    width: 30rem;
+    height: 2.5rem;
+    padding: 1rem 2.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #354F52;
+    color:#EEE3DC;
+    text-align: center;
+    font-family: "Cantarell";
+    font-size: 1.5rem;
+}
+
+#message {
+    width: 40rem;
+    height: 10rem;
+    background-color: #354f52;
+    color:#EEE3DC;
+    font-family: "Cantarell";
+    font-size: 1rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+}
+
+#submit {
+    font-family: "Red Hat Display Reg";
+    font-size: 2rem;
+    color:#EEE3DC;
+    border-radius: 20px;
+    outline: none;
+    padding: 0.5rem 8rem;
+    background-color: #c8543d;
+    margin: 2rem;
+    transition: transform 0.5s;
+}
+
+#submit:hover {
+    transform: scale(1.02);
+    box-shadow: 0em 0.4em 0.4em rgba(0, 0, 0, 0.189);
+}
